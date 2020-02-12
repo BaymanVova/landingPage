@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/66e4cdc3c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Content/reset.css">
     <link rel="stylesheet" href="Content/site.css">
+    <link rel="stylesheet" href="Content/media.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
     <title>Landing</title>
@@ -17,15 +18,24 @@
     <section>
         <div class="main-wrapper">
             <div class="logo"><a href="#">Dev Resturent</a></div>
+            <label for="check-menu"></label>
+            <input type="checkbox" id="check-menu">
+            <div class="burger">
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+            </div>
+
             <nav class="main-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Chef</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#chef">Chef</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,7 +52,7 @@
     </section>
 </header>
 <main>
-    <section class="section-story scratches-grey">
+    <section class="section-story scratches-grey" id="about">
         <div class="main-wrapper">
             <div class="section-story__cards">
                 <div class="section-story__card">
@@ -75,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="dishes">
+    <section class="dishes" id="menu">
         <div class="main-wrapper">
             <div class="dishes__header">
                 <h4>Let's discover food</h4>
@@ -353,7 +363,7 @@
             <img src="Content/img/quotation.jpg" alt="Quotation">
         </div>
     </section>
-    <section class="recipes scratches-grey">
+    <section class="recipes scratches-grey" id="recipes">
         <div class="main-wrapper">
             <div class="recipes__header">
                 <h4>Discover Recipes From Restaurant</h4>
@@ -389,7 +399,7 @@
             </div>
         </div>
     </section>
-    <section class="cooks">
+    <section class="cooks" id="chef">
         <div class="main-wrapper">
             <div class="cooks__header">
                 <h4>Discover Recipes From Restaurant</h4>
@@ -469,7 +479,7 @@
             </div>
         </div>
     </section>
-    <section class="order">
+    <section class="order" id="reservation">
         <div class="main-wrapper">
             <div class="section__header">
                 <h4>Submit Information to Place Order</h4>
@@ -536,7 +546,7 @@
             </div>
         </div>
     </section>
-    <section class="blog scratches-grey">
+    <section class="blog scratches-grey" id="blog">
         <div class="main-wrapper">
             <div class="section__header">
                 <h4>Latest updated</h4>
@@ -604,65 +614,76 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="main-wrapper">
-            <div class="footer__cols">
-                <div class="footer__col-1">
-                    <h6>Dev Restaurant</h6>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed .</p>
+</main>
+<footer>
+    <div class="main-wrapper">
+        <div class="footer__cols">
+            <div class="footer__col-1">
+                <h6>Dev Restaurant</h6>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed .</p>
+                <div class="footer__col-social">
                     <div class="footer__col-social">
-                        <div class="footer__col-social">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-
                 </div>
-                <div class="footer__col-1">
-                    <h6>Dev Restaurant</h6>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed .</p>
-                    <div class="footer__col-social">
-                        <div class="footer__col-social">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="footer__col-1">
-                    <h6>Dev Restaurant</h6>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed .</p>
-                    <div class="footer__col-social">
-                        <div class="footer__col-social">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+            </div>
+            <div class="footer__col-2">
+                <h6>Open Hours</h6>
 
-                </div>
-                <div class="footer__col-1">
-                    <h6>Dev Restaurant</h6>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed .</p>
-                    <div class="footer__col-social">
-                        <div class="footer__col-social">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                <ul>
+                    <li>
+                        <span>Mondays</span>
+                        <span class="line"></span>
+                        <span>Closed</span>
+                    </li>
+                    <li>
+                        <span>Tue-Fri</span>
+                        <span class="line"></span>
+                        <span>10am - 12am</span>
+                    </li>
+                    <li>
+                        <span>Sat-Sun</span>
+                        <span class="line"></span>
+                        <span>7am - 1am</span>
+                    </li>
+                    <li>
+                        <span>Public Holidays</span>
+                        <span class="line"></span>
+                        <span>7am - 1am</span>
+                    </li>
+                </ul>
 
+            </div>
+            <div class="footer__col-3">
+                <h6>Contact us</h6>
+               <p>+1 (123) xxx-xxxx</p>
+               <p>121/32 Second Street, New York, King Street, New York
+                   United State</p>
+               <p>devrest@devrest.com</p>
+
+            </div>
+            <div class="footer__col-4">
+                <h6>Instagram</h6>
+                <div class="pictures">
+                    <img src="Content/img/insta1.jpg" alt="Instagram">
+                    <img src="Content/img/insta2.jpg" alt="Instagram">
+                    <img src="Content/img/insta3.jpg" alt="Instagram">
+                    <img src="Content/img/insta4.jpg" alt="Instagram">
+                    <img src="Content/img/insta5.jpg" alt="Instagram">
+                    <img src="Content/img/insta6.jpg" alt="Instagram">
                 </div>
+
             </div>
         </div>
+        <div class="right">
+            <p>© 2019 All Rights Reserved. Designed By</p>
+        </div>
+    </div>
 
-    </footer>
-</main>
+</footer>
 </body>
 </html>
