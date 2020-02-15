@@ -24,6 +24,10 @@ body {
   font-family: "CerebriSansRegular", sans-serif;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: CerebriSansBold;
   font-size: 8.2rem;
@@ -48,8 +52,13 @@ h5 {
   text-transform: uppercase;
 }
 
+main section {
+  padding: 6rem 0;
+}
+
 .main-wrapper {
   margin: 0 auto;
+  width: 100%;
   max-width: 1170px;
   padding: 0 1.5rem;
 }
@@ -103,7 +112,8 @@ h5 {
 header {
   background: url(img/main-bg.jpg) no-repeat center 100%;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 header section {
   z-index: 1;
@@ -180,7 +190,7 @@ header .main-menu ul li:last-child a {
 }
 
 .header-text {
-  margin-top: 70px;
+  margin: 70px 0 100px;
 }
 .header-text h4 {
   color: #FFFFFF;
@@ -283,17 +293,19 @@ header .main-menu ul li:last-child a {
   margin-top: -15px;
   background-color: #f5f5f5;
   position: relative;
-  padding-bottom: 80px;
+  padding: 0;
+}
+.section-story .main-wrapper {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-70px);
 }
 .section-story .section-story__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
-  transform: translateY(-70px);
   color: #0d0d0d;
   text-align: center;
-  z-index: 2;
 }
 .section-story .section-story__cards .section-story__card {
   display: flex;
@@ -335,7 +347,7 @@ header .main-menu ul li:last-child a {
   display: flex;
   position: relative;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10rem;
 }
 .section-story .our-story h6 {
   font-family: "Cerebri Sans SemiBold";
@@ -359,7 +371,7 @@ header .main-menu ul li:last-child a {
 }
 
 .dishes {
-  padding: 80px 0;
+  padding-bottom: 80px;
 }
 .dishes .dishes__header {
   text-align: center;
@@ -372,9 +384,12 @@ header .main-menu ul li:last-child a {
   border-radius: 20px;
   margin: 50px auto 80px;
   max-width: 825px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .dishes .dishes__menu .dishes__menu-item {
   display: flex;
+  flex: 1 1 95px;
   background-color: #FFFFFF;
   flex-direction: column;
   align-items: center;
@@ -383,12 +398,6 @@ header .main-menu ul li:last-child a {
   height: 160px;
   transition: background-color 0.3s;
   cursor: pointer;
-}
-.dishes .dishes__menu .dishes__menu-item:first-child {
-  border-radius: 20px 0 0 20px;
-}
-.dishes .dishes__menu .dishes__menu-item:last-child {
-  border-radius: 0 20px 20px 0;
 }
 .dishes .dishes__menu .dishes__menu-item span {
   font-family: "Cerebri Sans SemiBold";
@@ -425,6 +434,7 @@ header .main-menu ul li:last-child a {
   padding: 50px 0 0;
   margin-bottom: 40px;
   transition-duration: 0.2s;
+  min-width: 215px;
 }
 .dishes .dishes__list .dish:hover {
   box-shadow: 0px 0 5px 5px rgba(0, 0, 0, 0.05);
@@ -491,7 +501,6 @@ header .main-menu ul li:last-child a {
 .sets {
   margin-top: -15px;
   background-color: #f5f5f5;
-  padding: 80px;
   position: relative;
 }
 .sets .set-top {
@@ -500,7 +509,6 @@ header .main-menu ul li:last-child a {
   position: relative;
 }
 .sets .set-top .back-poster-text {
-  padding: 80px 45px 60px 80px;
   width: 50%;
 }
 .sets .set-bottom {
@@ -510,7 +518,6 @@ header .main-menu ul li:last-child a {
   margin: 90px 0 70px;
 }
 .sets .set-bottom .back-poster-text {
-  padding: 80px 45px 60px 80px;
   width: 50%;
   z-index: 1;
   left: 0;
@@ -576,7 +583,8 @@ header .main-menu ul li:last-child a {
 }
 
 .quotations {
-  background-color: #0d0d0d;
+  background-color: #292929;
+  padding: 0;
 }
 .quotations .fluid-wrapper {
   display: flex;
@@ -588,7 +596,7 @@ header .main-menu ul li:last-child a {
   width: 50%;
 }
 .quotations .fluid-wrapper .quotation q {
-  padding: 0 60px;
+  padding: 70px 45px 0;
   display: inline-block;
   font-family: CerebriSansBold;
   font-size: 1.9rem;
@@ -604,7 +612,7 @@ header .main-menu ul li:last-child a {
   height: 3.2rem;
   position: absolute;
   left: calc(50% - 3.7rem/2);
-  top: -70px;
+  top: 0;
 }
 .quotations .fluid-wrapper .quotation address {
   opacity: 0.8;
@@ -629,7 +637,6 @@ header .main-menu ul li:last-child a {
 }
 
 .recipes {
-  padding: 50px 0;
   position: relative;
 }
 .recipes .recipes__header {
@@ -645,7 +652,9 @@ header .main-menu ul li:last-child a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 150px 0;
+  margin: 60px auto;
+  max-width: 840px;
+  flex-wrap: wrap;
 }
 .recipes .recipes__cols .recipes__col {
   display: flex;
@@ -653,7 +662,7 @@ header .main-menu ul li:last-child a {
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
-  flex: 1 1 25%;
+  flex: 1 1 23%;
 }
 .recipes .recipes__cols .recipes__col:first-of-type {
   margin-left: 0;
@@ -674,9 +683,6 @@ header .main-menu ul li:last-child a {
   margin-top: 50px;
 }
 
-.cooks {
-  padding: 60px 0;
-}
 .cooks .cooks__header {
   text-align: center;
 }
@@ -690,6 +696,7 @@ header .main-menu ul li:last-child a {
   display: flex;
   justify-content: space-between;
   margin: 60px auto 0;
+  flex-wrap: wrap;
 }
 .cooks .cooks__items .cooks__item {
   display: flex;
@@ -791,6 +798,7 @@ header .main-menu ul li:last-child a {
 }
 .achievements .achievements__items {
   display: flex;
+  flex-wrap: wrap;
   flex: 1 1 24%;
   justify-content: space-around;
   color: #ffffff;
@@ -799,6 +807,7 @@ header .main-menu ul li:last-child a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 .achievements .achievements__items .achievement__item h6 {
   font-size: 3.7rem;
@@ -821,9 +830,11 @@ header .main-menu ul li:last-child a {
   position: relative;
   margin-top: 60px;
 }
+.order .order_box img {
+  width: initial;
+}
 .order .order_box .back-poster-text {
-  padding: 35px 60px 35px 80px;
-  width: 50%;
+  width: 570px;
   background-color: #f5f5f5;
 }
 .order .order_box .order__form .form__line {
@@ -859,6 +870,7 @@ header .main-menu ul li:last-child a {
 }
 .blog .blog__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
 }
