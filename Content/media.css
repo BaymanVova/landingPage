@@ -72,6 +72,27 @@
     width: 50%;
     min-width: calc(320px - 3rem);
   }
+
+  .subscribe {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .subscribe .subscribe__box {
+    flex-direction: column;
+  }
+  .subscribe .subscribe__box .subscribe__box-info {
+    margin-bottom: 30px;
+  }
+  .subscribe .subscribe__box .subscribe__box-info h5 {
+    width: initial;
+  }
+
+  footer .footer__cols .footer__col-1, footer .footer__cols .footer__col-2, footer .footer__cols .footer__col-3, footer .footer__cols .footer__col-4 {
+    flex: 0 1 48%;
+  }
+  footer .footer__cols .footer__col-1:nth-child(3), footer .footer__cols .footer__col-1:nth-child(4), footer .footer__cols .footer__col-2:nth-child(3), footer .footer__cols .footer__col-2:nth-child(4), footer .footer__cols .footer__col-3:nth-child(3), footer .footer__cols .footer__col-3:nth-child(4), footer .footer__cols .footer__col-4:nth-child(3), footer .footer__cols .footer__col-4:nth-child(4) {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 800px) {
   header .main-menu ul li {
@@ -199,6 +220,10 @@
   .cooks .cooks__items .cooks__item + .cooks__item {
     margin-top: 60px;
   }
+
+  .subscribe .subscribe__box {
+    padding: 50px;
+  }
 }
 @media (max-width: 500px) {
   .dishes .dishes__menu .dishes__menu-item {
@@ -235,10 +260,30 @@
     margin-left: 0;
     margin-top: 20px;
   }
+
+  .subscribe .subscribe__box {
+    padding: 20px;
+  }
+  .subscribe .subscribe__box .subscribe__box-form form {
+    flex-wrap: wrap;
+  }
+  .subscribe .subscribe__box .subscribe__box-form form input + button {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 460px) {
   .dishes .dishes__list .dish {
     flex: 0 0 75%;
+  }
+
+  footer .footer__cols .footer__col-1, footer .footer__cols .footer__col-2, footer .footer__cols .footer__col-3, footer .footer__cols .footer__col-4 {
+    flex: 0 1 100%;
+    margin-top: 30px;
+  }
+  footer .footer__cols .footer__col-1:first-of-type, footer .footer__cols .footer__col-2:first-of-type, footer .footer__cols .footer__col-3:first-of-type, footer .footer__cols .footer__col-4:first-of-type {
+    margin-top: 0;
   }
 }
 @media (max-width: 400px) {

@@ -437,7 +437,7 @@ header .main-menu ul li:last-child a {
   min-width: 215px;
 }
 .dishes .dishes__list .dish:hover {
-  box-shadow: 0px 0 5px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 .dishes .dishes__list .dish .dish__img {
   position: relative;
@@ -809,6 +809,9 @@ header .main-menu ul li:last-child a {
   align-items: center;
   justify-content: flex-end;
 }
+.achievements .achievements__items .achievement__item .achievements__item-body {
+  text-align: center;
+}
 .achievements .achievements__items .achievement__item h6 {
   font-size: 3.7rem;
   line-height: 1.22;
@@ -1018,7 +1021,7 @@ header .main-menu ul li:last-child a {
 }
 
 footer {
-  padding: 170px 0 30px;
+  padding: 150px 0 30px;
   position: relative;
   background-color: #242424;
   color: #FFFFFF;
@@ -1031,6 +1034,8 @@ footer p {
 footer .footer__cols {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 footer .footer__cols .footer__col-1, footer .footer__cols .footer__col-2, footer .footer__cols .footer__col-3, footer .footer__cols .footer__col-4 {
   flex: 0 1 23%;
