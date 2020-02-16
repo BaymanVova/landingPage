@@ -8,6 +8,7 @@ $color-btn-black: #292929;
   src: url("fonts/CerebriSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -15,12 +16,21 @@ $color-btn-black: #292929;
   src: url("fonts/CerebriSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "CerebriSansItalic";
   src: url("fonts/CerebriSans-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CerebriSansSemiBold";
+  src: url("fonts/CerebriSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
 }
 
 html {
@@ -380,7 +390,7 @@ header {
     margin-top: 10rem;
 
     h6 {
-      font-family: "Cerebri Sans SemiBold";
+      font-family: CerebriSansSemiBold;
       font-size: 1.3rem;
       font-weight: 500;
       line-height: 1.5;
@@ -435,7 +445,7 @@ header {
 
 
       span {
-        font-family: "Cerebri Sans SemiBold";
+        font-family: CerebriSansSemiBold;
         font-size: 1.3rem;
         font-weight: 600;
         line-height: 1.13;
@@ -601,7 +611,7 @@ header {
       position: relative;
 
       .set-item__name {
-        font-family: "Cerebri Sans SemiBold";
+        font-family: CerebriSansSemiBold;
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.2;
@@ -810,7 +820,7 @@ header {
           text-transform: uppercase;
         }
         p {
-          font-family: "Cerebri Sans SemiBold";
+          font-family: CerebriSansSemiBold;
           font-size: 1.3rem;
           font-weight: 600;
           line-height: 1.5;

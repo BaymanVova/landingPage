@@ -3,18 +3,28 @@
   src: url("fonts/CerebriSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "CerebriSansBold";
   src: url("fonts/CerebriSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "CerebriSansItalic";
   src: url("fonts/CerebriSans-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CerebriSansSemiBold";
+  src: url("fonts/CerebriSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
 }
 html {
   font-size: 10px;
@@ -350,7 +360,7 @@ header .main-menu ul li:last-child a {
   margin-top: 10rem;
 }
 .section-story .our-story h6 {
-  font-family: "Cerebri Sans SemiBold";
+  font-family: CerebriSansSemiBold;
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
@@ -400,7 +410,7 @@ header .main-menu ul li:last-child a {
   cursor: pointer;
 }
 .dishes .dishes__menu .dishes__menu-item span {
-  font-family: "Cerebri Sans SemiBold";
+  font-family: CerebriSansSemiBold;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.13;
@@ -546,7 +556,7 @@ header .main-menu ul li:last-child a {
   position: relative;
 }
 .sets .back-poster__body .set-item__info .set-item__name {
-  font-family: "Cerebri Sans SemiBold";
+  font-family: CerebriSansSemiBold;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -742,7 +752,7 @@ header .main-menu ul li:last-child a {
   text-transform: uppercase;
 }
 .cooks .cooks__items .cooks__item .cooks__item-body p {
-  font-family: "Cerebri Sans SemiBold";
+  font-family: CerebriSansSemiBold;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.5;
